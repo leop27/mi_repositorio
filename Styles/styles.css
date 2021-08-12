@@ -1,0 +1,201 @@
+html, body {
+    background-image: url(../multimedia/FONDO.jpg);
+    
+}
+ #main{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos productos"
+    "nav productos productos"
+    "nav footer footer";
+    grid-template-rows: 50px 1fr 1fr 50px; 
+    grid-template-columns: 1fr 5fr;
+    grid-row-gap: 1px;
+    grid-column-gap: 0px;
+    height: 100vh;
+    margin: 0;
+ }
+
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;     
+ }
+ 
+ nav {
+    grid-area: nav;
+ }
+ 
+.cabecera {
+    background-color: black;
+}
+
+
+.principal{
+    background-image: url(../multimedia/Cerveza-artesanal-1.jpeg);
+    background-size: cover;
+    background-repeat: round;
+}
+
+h1{
+    
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.textos{
+    font-family: 'Encode Sans SC';
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+
+h3 {
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+    
+.borders{
+    padding: 0;
+    margin: 0;
+}
+
+.subtitulos {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: cursive;
+    font-size: x-large;
+    
+}
+
+.menu{
+    display: flex;
+    padding: 0px;
+    border-right: 1px solid beige;
+    font-family: monospace;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-image: linear-gradient(to left, white , grey);
+}
+
+nav ul li a {
+
+    color:rgb(49, 6, 39);
+    text-decoration: none;
+
+}
+
+ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.781);
+	color: white;
+	padding: 0px;
+    border-radius: 10%;
+}
+
+.menu nav ul li a:visited {
+
+    color:rgb(211, 8, 163);
+    text-decoration: none;
+
+}
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.subitem{
+    display: inline-block;
+    width: 100px;
+}
+
+ul li:hover .submenu{
+    display: block;
+    background-color: rgb(7, 2, 2);
+    color: chocolate;
+    border-radius: 10%;
+}
+ nav ul {display: contents;}
+
+ nav div p:hover{
+    transform: rotateZ(360deg);
+    transition: all 8s; 
+}
+    
+.inline{
+    text-align: left;
+    font-size: 17px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+    
+}
+
+.inline:hover {
+    transform: scale(130%,1);
+    transform: translate(40px, 0);
+
+}
+
+.tipos__cerveza{
+    background-color: #000000bd; 
+    display: flex;
+}
+
+.quienes__somos{
+    background-color: #000000bd; 
+    display: flex;
+}
+
+.contacto{
+    background-color: #000000bd; 
+    display: flex;
+}
+
+.piedepagina{
+    display: flex;
+    color: black;
+    font-family: cursive;
+    border-top: 1px solid beige;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    margin: 0px;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #dbd7cb , #693a26);
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul a{
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    transform: scale(130%,1);
+    transform: translate(40px, 0);
+}
+
