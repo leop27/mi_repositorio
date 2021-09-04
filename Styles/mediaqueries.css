@@ -1,8 +1,0 @@
-@media screen and (max-width: 780px) {
-   
-    .tipos__cerveza{
-        background-color: #000000bd; 
-        display: flex;
-        flex-direction: column;
-    }
-}
